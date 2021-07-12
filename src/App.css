@@ -1,38 +1,63 @@
-.App {
+.superheading {
+  color: #fff;
+}
+.superheading h1,
+h2 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.superheading h2 {
+  color: orangered;
+}
+.superheading h1:hover {
+  color: red;
+  transform: scale(1.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.supercard {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.supercard {
+  color: #fff;
+  margin-bottom: 20px;
+  margin: 10px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.supercard .box {
+  max-width: 500px;
+  margin: 50px 0 50px 0;
 }
+.supercard .box {
+  width: calc(25% - 10px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 50px;
+  cursor: pointer;
+}
+.supercard .box:hover{
+    color:black;    
+}
+.supercard .box:hover {
+  transform: scale(1.2);   
+}
+.supercard .box-time:hover {
+  background: skyblue;
+}
+.supercard .box-case:hover {
+  background: rgb(238, 231, 130);
+}
+.supercard .box-re:hover {
+  background: lightgreen;
+}
+.supercard .box-death:hover {
+  background: rgb(248, 41, 41);
+}
+.supercard .box .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
